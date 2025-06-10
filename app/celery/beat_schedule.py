@@ -5,7 +5,7 @@ from app.celery.celery_worker import celery_app
 celery_app.conf.beat_schedule = {
     'run-daily-scheduler': {
         'task': 'app.celery.tasks.schedule_task',
-        'schedule': crontab(hour=10, minute=0),  # every day at midnight
+        'schedule': crontab(hour=0, minute=0),  # every day at midnight
     },
     'run-5min-executor': {
         'task': 'app.celery.tasks.execute_tasks',

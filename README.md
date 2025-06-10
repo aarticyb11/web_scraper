@@ -16,7 +16,7 @@ This project is a web scraping system built with **FastAPI**, **Celery**, and **
 ### Setup Instructions
 
 ## Prerequisites
-1. Python 3.11+
+1. Python 3.11
 2. PostgreSQL installed locally
 3. Redis for Celery task queue
 
